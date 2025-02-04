@@ -1,6 +1,13 @@
+@font-face {
+    font-family: montserrat;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype')
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'montserrat';
+    font-weight: bold
 }
 .page1{
     background-color: #ff7f50;
@@ -19,6 +26,7 @@ header,nav{
     padding: 3px;
     display:flex;
     justify-content: space-around;
+    font-weight: bold;
 
 }
 .page2{
@@ -27,11 +35,8 @@ header,nav{
 .page3{
     background-color: #FA8072;
 }
-/*.page_3{
-    background-image: url(/img/tutoIMG_copia.png);
-    height: 300px;
-    width: 100%;
-}*/
+
+
 .page_3>nav{
     background-color: none;
 }
