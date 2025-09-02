@@ -36,9 +36,24 @@ public class Main {
 
 	List<String> convenio_bancada2 = Arrays.asList("Data: 07/01/2020","Convenente: ESTADO DE PERNAMBUCO","Objeto: PREVENÇÃO A EROSÃO COSTEIRA EM ÁREAS URBANIZADAS","Número: 542986","Valor (R$): 48.525.699,30");
 
+	List<String> autores_bancada3 = Arrays.asList("Dep. André de Paula","Dep. André Ferreira","Dep. Augusto Coutinho","Dep. Carlos Veras","Dep. Daniel Coelho","Dep. Danilo Cabral","Dep. Eduardo da Fonte","Dep. Felipe Carreras","Dep. Fernando Coelho Filho","Dep. Fernando Monteiro","Dep. Fernando Rodolfo","Dep. Gonzaga Patriota",
+"Dep. Luciano Bivar","Dep. Marília Arraes","Dep. Milton Coelho",
+"Dep. Ossesio Silva","Dep. Pastor Eurico","Dep. Raul Henry","Dep. Renildo Calheiros","Dep. Ricardo Teobaldo","Dep. Sebastião Oliveira", "Dep. Silvio Costa Filho","Dep. Tadeu Alencar","Dep. Túlio Gadêlha",
+"Dep. Wolney Queiroz",);
+
+	List<String> convenio_bancada3 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+	List<String> documento_bancada3 = Arrays.asList(
+	"Data: 04/07/2023 - Documento: 2023NE463728 - Fase: EMPENHO",
+	"Data: 04/07/2023 - Documento: 2023NE463730 - Fase: EMPENHO",
+	"Data: 25/08/2023 - Documento: 2023NS054073 - Fase: LIQUIDAÇÃO",
+	"Data: 28/08/2023 - Documento: 2023OB819540 - Fase: PAGAMENTO");
+
 	emenda_bancada bancada1 = new emenda_bancada("202171180001", autores_bancada1, 2021, "GESTÃO AMBIENTAL","PERNAMBUCO (UF)", 0.00f, 0.00f, 20225934.00f, convenio_bancada1, documento_bancada1);
 
 	emenda_bancada bancada2 = new emenda_bancada("201971180001",autores_bancada2, 2019, "GESTÃO AMBIENTAL", "PERNAMBUCO/PE", 0.00f, 0.00f, 9963183.00f, convenio_bancada2, documento_bancada2);
+
+	emenda_bancada bancada3 = new emenda_bancada("202371180001",autores_bancada3, 2023,"SAÚDE","PERNAMBUCO (UF)",15746106.00f,15746106.00f, 0.00f,convenio_bancada3, documento_bancada3);
 
 bancada1.ImprimeInfo();
 bancada2.ImprimeInfo();
