@@ -15,7 +15,7 @@ public class emenda_relator {
     private List<String> documentos;
 
 
-    public emenda_bancada(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String acao, String programa, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos) {
+    public emenda_relator(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String acao, String programa, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos) {
         this.codigo = codigo;
         this.autores = autores;
         this.ano_emenda = ano_emenda;
