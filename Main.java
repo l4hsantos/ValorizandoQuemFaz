@@ -60,18 +60,41 @@ bancada2.ImprimeInfo();
 bancada3.ImprimeInfo();
 
 
-	Lista<String> autores_comissao1 = Arrays.asList();
-	Lista<String> autores_comissao2 = Arrays.asList();
-	Lista<String> autores_comissao3 = Arrays.asList();
+	Lista<String> autores_comissao1 = Arrays.asList("COM. AGRICULTURA PEC ABAST D. RURAL");
 
-	Lista<String> convenio_comissao1 = Arrays.asList();
-	Lista<String> convenio_comissao2 = Arrays.asList();
-	Lista<String> convenio_comissao3 = Arrays.asList();
+	Lista<String> autores_comissao2 = Arrays.asList("COM. ASSUNTOS ECONÔMICOS");
 
-	Lista<String> documento_comissao1 = Arrays.asList();
-	Lista<String> documento_comissao2 = Arrays.asList();
-	Lista<String> documento_comissao3 = Arrays.asList();
+	Lista<String> autores_comissao3 = Arrays.asList("COM. DEFESA DO CONSUMIDOR");
 
+	Lista<String> convenio_comissao1 = Arrays.asList(
+"Data: 04/07/2024 - Convenente: MUNICÍPIO DE ITUACU - Objeto: EXECUÇÃO DE OBRAS OU SERVIÇOS DE ENGENHARIA EM ESTRADAS VICINAIS NO MUŃICÍPIO DE ITUACU",
+"Data: 12/07/2024 - Convenente: ASSOCIAÇÃO DOS TRABALHADORES AGROEXTRATIVISTAS - Objeto: PROJETO DE AQUISIÇÃO DE EQUIPAMENTOS");
+
+	Lista<String> convenio_comissao2 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+	Lista<String> convenio_comissao3 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+	Lista<String> documento_comissao1 = Arrays.asList(
+"Data: 13/05/2024 - Documento: 2024NE000623 - Fase: EMPENHO",
+"Data 30/05/2025 - Documento: 2025NS002603 - Fase: LIQUIDAÇÃO",
+"Data: 25/08/2025 - Documento: 2025OB000893 - Fase: PAGAMENTO");
+
+	Lista<String> documento_comissao2 = Arrays.asList(
+"Data: 08/07/2022 - Documento: 2022NS004179 - Fase: LIQUIDAÇÃO",
+"Data: 12/07/2022 - Documento: 2022OB801815 - Fase: PAGAMENTO",
+"Data: 19/12/2022 - Documento: 2022NE000427 - Fase: EMPENHO");
+
+	Lista<String> documento_comissao3 = Arrays.asList(
+"Data: 01/12/2023 - Documento: 2023NE000383 - Fase: EMPENHO",
+"Data: 19/01/2024 - Documento: 2024SN000925 - Fase: LIQUIDAÇÃO",
+"Data: 12/03/2024 - Documento: 2024OB000315 - Fase: PAGAMENTO");
+
+
+	emenda_comissao comissao1 = new emenda_comissao("202450100001",autores_comissao1,2024,"AGRICULTURA","MÚLTIPLO",5063524.30f,149999997.19f,4312754.80f,convenio_comissao1,documento_comissao1);
+
+	emenda_comissao comissao2 = new emenda_comissao("202260050003",autores_comissao2,2022,"ADMINISTRAÇÃO","NACIONAL",2084197.00f,1500000.00f,2084197.00f,convenio_comissao2,documento_comissao2);
+
+	emenda_comissao comissao3 = new emenda_comissao("202350130002", autores_comissao3, 2023, "DIREITOS DA CIDADANIA", "NACIONAL", 0.00f, 0.00f, 50000.00f, convenio_comissao3, documento_comissao3);
 
 comissao1.ImprimeInfo();
 comissao2.ImprimeInfo();
