@@ -52,7 +52,7 @@ public class emenda_bancada {
 			public void setLink(String link) { this.link = link; }
 
     public void ImprimeInfo() {
-        System.out.println("--- EMENDA DE BANCADA ---");
+        System.out.println("--- EMENDA DE COMISSÃO ---");
         System.out.println("Código: " + codigo);
         System.out.println("Autores: " + autores);
         System.out.println("Ano: " + ano_emenda);
