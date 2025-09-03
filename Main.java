@@ -58,6 +58,25 @@ public class Main {
 bancada1.ImprimeInfo();
 bancada2.ImprimeInfo();
 bancada3.ImprimeInfo();
+
+
+	Lista<String> autores_comissao1 = Arrays.asList();
+	Lista<String> autores_comissao2 = Arrays.asList();
+	Lista<String> autores_comissao3 = Arrays.asList();
+
+	Lista<String> convenio_comissao1 = Arrays.asList();
+	Lista<String> convenio_comissao2 = Arrays.asList();
+	Lista<String> convenio_comissao3 = Arrays.asList();
+
+	Lista<String> documento_comissao1 = Arrays.asList();
+	Lista<String> documento_comissao2 = Arrays.asList();
+	Lista<String> documento_comissao3 = Arrays.asList();
+
+
+comissao1.ImprimeInfo();
+comissao2.ImprimeInfo();
+comissao.ImprimeInfo();
+
 	}
 
 }
