@@ -11,8 +11,9 @@ public class emenda_bancada {
     private float valor_empenho;
     private List<String> convenio;
     private List<String> documentos;
+			private String link;
 
-    public emenda_bancada(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos) {
+    public emenda_bancada(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos, String link) {
         this.codigo = codigo;
         this.autores = autores;
         this.ano_emenda = ano_emenda;
@@ -23,6 +24,7 @@ public class emenda_bancada {
         this.valor_empenho = valor_empenho;
         this.convenio = convenio;
         this.documentos = documentos;
+						this.link = link;
     }
 
     public String getCodigo() { return codigo; }
@@ -46,6 +48,8 @@ public class emenda_bancada {
     public void setConvenio(List<String> convenio) { this.convenio = convenio; }
     public List<String> getDocumentos() { return documentos; }
     public void setDocumentos(List<String> documentos) { this.documentos = documentos; }
+			public String getLink() { return link; }
+			public void setLink(String link) { this.link = link; }
 
     public void ImprimeInfo() {
         System.out.println("--- EMENDA DE BANCADA ---");
@@ -60,5 +64,6 @@ public class emenda_bancada {
         System.out.println("Valor total: R$" + getValor_total());
         System.out.println("Convênio: " + convenio);
         System.out.println("Documentos: " + documentos);
+						System.out.println("Link da comissão temática: " + link);
     }
 }
