@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class emenda_bancada {
+public class emenda_comissao {
     private String codigo;
     private List<String> autores;
     private int ano_emenda;
@@ -13,7 +13,7 @@ public class emenda_bancada {
     private List<String> documentos;
 			
 
-    public emenda_bancada(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos) {
+    public emenda_comissao(String codigo, List<String> autores, int ano_emenda, String area_atuacao, String localidade, float valor_liquidado, float valor_pago, float valor_empenho, List<String> convenio, List<String> documentos) {
         this.codigo = codigo;
         this.autores = autores;
         this.ano_emenda = ano_emenda;
