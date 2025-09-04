@@ -97,9 +97,9 @@ public class Main {
 "Data: 28/08/2020 - Documento: 2020OB801457 - Fase: PAGAMENTO");
 
         List<String> documentos_relator2 = Arrays.asList(
-"Data: 02/04/2014 - Documento: 2014NE802287 - Fase: EMPENHO - Favorecido: MUNICIPIO DE MATA DE SAO JOAO",
-"Data:);
-        List<String> documentos_relator3 = Arrays.asList();
+"Data: 02/04/2014 - Documento: 2014NE802287 - Fase: EMPENHO - Favorecido: MUNICIPIO DE MATA DE SAO JOAO");
+        List<String> documentos_relator3 = Arrays.asList(
+"Data: );
 
         List<String> convenio_relator1 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
 
@@ -112,7 +112,7 @@ public class Main {
         emenda_relator relator1 = new emenda_relator("202081001490",autores_relator1, 2020,"AGRICULTURA", "IMPLANTAÇÃO DO PROJETO PÚBLICO DE IRRIGAÇÃO PONTAL","DESEN. REGIONAL, TERRITORIAL E URBANO", "PERNAMBUCO (UF)",3974422.50f, 8142967.79f, 3924468.67f,convenio_relator1,documento_relator1);
         emenda_relator relator2 = new emenda_relator("SEM INFORMAÇÃO",autores_relator2,2019,"EDUCAÇÃO","REESTRUTURAÇÃO DAS INSTITUIÇÕES FEDERAIS DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLOGICA","EDUCAÇÃO DE QUALIDADE PARA TODOS","PERNAMBUCO (UF)",0.00f,74652.00f,0.00f, convenio_relator2,documento_relator2);
 
-        emenda_relator relator3 = new emenda_relator();
+        emenda_relator relator3 = new emenda_relator("SEM INFORMAÇÃO",autores_relator3,2016,"ASSISTÊNCIA SOCIAL","SERVIÇO DE PROTEÇÃO SOCIAL BÁSICA","CONSOLIDAÇÃO DO SISTEMA ÚNICO DE ASSISTÊNCIA SOCIAL (SUAS)","PERNAMBUCO (UF)",0.00f,9567800.00f,0.00f,convenio_relator3,documento_relator3);
 
         relator1.ImprimeInfo();
         relator2.ImprimeInfo();
