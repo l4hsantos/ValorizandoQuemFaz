@@ -1,6 +1,6 @@
 import java.util.ArrayList; // cria listas dinâmicas
-import java.util.Arrays;    // cria listas fixas (Arrays.asList)
-import java.util.List;      // interface de listas
+import java.util.Arrays;    // cria listas fixas 
+import java.util.List;      // interface de listas arrumadinha
 
 public class Main {
     public static void main(String[] args) {
@@ -100,7 +100,7 @@ public class Main {
 "Data: 02/04/2014 - Documento: 2014NE802287 - Fase: EMPENHO - Favorecido: MUNICIPIO DE MATA DE SAO JOAO");
         List<String> documentos_relator3 = Arrays.asList(
 "Data: 05/12/2016 - Documento: 2016NS03899 - Fase: LIQUIDAÇÃO",
-"Data: 28/05/2017 - Documento: 2017NE800046 - Fase: EMPENHO);
+"Data: 28/05/2017 - Documento: 2017NE800046 - Fase: EMPENHO");
 
         List<String> convenio_relator1 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
 
@@ -118,6 +118,79 @@ public class Main {
         relator1.ImprimeInfo();
         relator2.ImprimeInfo();
         relator3.ImprimeInfo();
+
+
+     //====== EMENDA INDIVIDUAL ======
+
+    List<String> autores_individual1 = Arrays.asList("ANDERSON FERREIRA");
+
+    List<String> convenio_individual1 = Arrays.asList("Data: 28/11/2016 - Convenente: FUNDAÇÃO ALTINO VENTURA - Objeto: AQUISIÇÃO DE EQUIPAMENTO E MATERIAL PARA UNIDADE DR ATENÇÃO ESPECIALIZADA EM SAÚDE");
+
+    List<String> documento_individual1 = Arrays.asList(
+"Data: 01/11/2016 - Documento: 2016NE802863 - Fase: EMPENHO",
+"Data: 31/12/2016 - Documento: 2016NS087842 - Fase: LIQUIDAÇÃO",
+"Data: 05/06/2017 - Documento: 2017OB824170 - Fase: PAGAMENTO",
+"Data: 05/06/2017 - Documento: 2017NS051597 - Fase: LIQUIDAÇÃO");
+
+    emenda_individual individual1 = new emenda_individual("201627170004",autores_individual1,2016,"SAÚDE","PERNAMBUCO (UF)",0.00f,0.00f,122000.00f,convenio_individual1, documento_individual1);
+
+    List<String> autores_individual2 = Arrays.asList("AUGUSTO COUTINHO");
+
+    List<String> convenio_individual2 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+    List<String> documento_individual2 = Arrays.asList("Data: 30/07/2025 - Documento: 2025NE030669 - Fase: EMPENHO");
+
+    emenda_individual individual2 = new emenda_individual("20257180014",autores_individual2,2025,"DEFESA SOCIAL","PERNAMBUCO (UF",0.00f,0.00f,200000.00f, convenio_individual2, documento_individual2);
+
+
+    List<String> autores_individual3 = Arrays.asList("CLARISSA TERCIO");
+
+    List<String> convenio_individual3 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+    List<String> documento_individual3 = Arrays.asList("Data: 08/08/2025 - Documento: 2025NE000413 - Fase: EMPENHO");
+
+    emenda_individual individual3 = new emenda_individual("202543230006",autores_individual3,2025,"ASSISTENCIA SOCIAL","PERNAMBUCO (UF)",0.00f,0.00f,200000.00f, convenio_individual3,documento_individual3);
+
+        individual1.ImprimeInfo();
+        individual2.ImprimeInfo();
+        individual3.ImprimeInfo();
+
+    //====== EMENDA ESPECIAL =====
+
+    List<String> autores_especial1 = Arrays.asList("TADEU ALENCAR");
+
+    List<String> convenio_especial1 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+    List<String> documento_especial1 = Arrays.asList(
+"Data: 09/08/2021 - Documento: 2021NE003922 - Fase: EMPENHO",
+"Data: 23/09/2021 - Documento: 2021NS013578 - Fase: LIQUIDAÇÃO",
+"Data: 24/09/2021 - Documento: 2021OB804223 - Fase: PAGAMENTO");
+
+    emenda_especial especial1 = new emenda_especial("202137670015",autores_especial1,2021,"ENCARGOS ESPECIAIS","PERNAMBUCO (UF)",100000.00f,100000.00f,100000.00f,convenio_especial1,documento_especial1);
+
+    List<String> autores_especial2 = Arrays.asList("FERNANDO DUEIRE");
+
+    List<String> convenio_especial2 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+    List<String> documento_especial2 = Arrays.asList("Data: 26/06/2024 - Documento: 2024NE011653",
+"Data: 12/12/2024 - Documento: 2024NS031453 - Fase: LIQUIDAÇÃO",
+"Data: 13/12/2024 - Documento: 2024OB10069 - Fase: PAGAMENTO");
+
+    emenda_especial especial2 = new emenda_especial("202442520006",autores_especial2,2024,"ENCARGOS ESPECIAIS","PERNAMBUCO (UF)",300000.00f,300000.00f,300000.00f, convenio_especial2, documento_especial2);
+
+    List<String> autores_especial3 = Arrays.asList("WOLNEY QUEIROZ");
+
+    List<String> convenio_especial3 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+    List<String> documento_especial3 = Arrays.asList("Data: 09/08/2021 - Documento: 2021NE002602 - Fase: EMPENHO",
+"Data: 23/09/2021 - Documento: 2021NS012186 - Fase: LIQUIDAÇÃO",
+"Data: 24/09/2021 - Documento: 2021OB802848 - Fase: PAGAMENTO");
+
+    emenda_especial especial3 = new emenda_especial("202133870002",autores_especial3,2021,"ENCARGOS ESPECIAIS","PERNAMBUCO (UF)",200000.00f,2000000.00f,200000.00f, convenio_especial3, documento_especial3);
+
+    especial1.ImprimeInfo();
+    especial2.ImprimeInfo();
+    especial3.ImprimeInfo();
 
     }
 }
