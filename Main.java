@@ -99,7 +99,8 @@ public class Main {
         List<String> documentos_relator2 = Arrays.asList(
 "Data: 02/04/2014 - Documento: 2014NE802287 - Fase: EMPENHO - Favorecido: MUNICIPIO DE MATA DE SAO JOAO");
         List<String> documentos_relator3 = Arrays.asList(
-"Data: );
+"Data: 05/12/2016 - Documento: 2016NS03899 - Fase: LIQUIDAÇÃO",
+"Data: 28/05/2017 - Documento: 2017NE800046 - Fase: EMPENHO);
 
         List<String> convenio_relator1 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
 
