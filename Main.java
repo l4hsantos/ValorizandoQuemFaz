@@ -87,6 +87,36 @@ public class Main {
 
         // ===== EMENDA DE RELATOR =====
 
+        List<String> autores_relator1 = Arrays.asList("RELATOR GERAL");
+        List<String> autores_relator2 = Arrays.asList("S/I - SEM INFORMAÇÃO");
+        List<String> autores_relator3 = Arrays.asList("S/I - SEM INFORMAÇÃO");
+
+        List<String> documentos_relator1 = Arrays.asList(
+"Data: 20/08/2020 - Documento: 2020NE440124 - Fase: EMPENHO",
+"Data: 26/08/2020 - Documento: 2020NS004144 - Fase: LIQUIDAÇÃO",
+"Data: 28/08/2020 - Documento: 2020OB801457 - Fase: PAGAMENTO");
+
+        List<String> documentos_relator2 = Arrays.asList(
+"Data: 02/04/2014 - Documento: 2014NE802287 - Fase: EMPENHO - Favorecido: MUNICIPIO DE MATA DE SAO JOAO",
+"Data:);
+        List<String> documentos_relator3 = Arrays.asList();
+
+        List<String> convenio_relator1 = Arrays.asList("NENHUM REGISTRO ENCONTRADO");
+
+        List<String> convenio_relator2 = Arrays.asList("NENHUM REGISTRO ENCONTRADO"
+);
+
+        List<String> convenio_relator3 = Arrays.asList("Data: 10/01/2011 - Convenente: MUNICIPIO DE SANTA JULIANA - Objeto: RECAPEAMENTO DE VIAS PÚBLICAS E CONSTRUÇÃO DE PASSEIOS NO MUNICIPIO",
+"Data: 22/11/2012 - Convenete: MUNICIPIO DE CORIBE - Objeto: IMPLANTAÇÃO DA PRAÇA DA JUVENTUDE");
+
+        emenda_relator relator1 = new emenda_relator("202081001490",autores_relator1, 2020,"AGRICULTURA", "IMPLANTAÇÃO DO PROJETO PÚBLICO DE IRRIGAÇÃO PONTAL","DESEN. REGIONAL, TERRITORIAL E URBANO", "PERNAMBUCO (UF)",3974422.50f, 8142967.79f, 3924468.67f,convenio_relator1,documento_relator1);
+        emenda_relator relator2 = new emenda_relator("SEM INFORMAÇÃO",autores_relator2,2019,"EDUCAÇÃO","REESTRUTURAÇÃO DAS INSTITUIÇÕES FEDERAIS DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLOGICA","EDUCAÇÃO DE QUALIDADE PARA TODOS","PERNAMBUCO (UF)",0.00f,74652.00f,0.00f, convenio_relator2,documento_relator2);
+
+        emenda_relator relator3 = new emenda_relator();
+
+        relator1.ImprimeInfo();
+        relator2.ImprimeInfo();
+        relator3.ImprimeInfo();
 
     }
 }
